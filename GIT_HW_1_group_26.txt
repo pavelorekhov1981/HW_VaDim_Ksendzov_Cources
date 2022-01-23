@@ -178,6 +178,7 @@ XML
     
 	cat >> new.xml
 	
+	<?xml version="1.0" encoding="utf-8"?>
 	<person>
 		<Full_name> 
 			<First_name>Павел</First_name>
@@ -206,7 +207,8 @@ XML
 	
 	Нажимаем Insert для редактирования
 	В редакторе пишем
-	
+
+<?xml version="1.0" encoding="utf-8"?>	
 <preferences>
 		<Favorite_movie> Interstate_60 </Favorite_movie>
 		<Favorite_tv_series> Game_of_Thrones </Favorite_tv_series>
@@ -224,39 +226,22 @@ XML
 	
 	<?xml version="1.0" encoding="utf-8"?>
 	<ul type="circle">
-
 		    <li>Basic_theory</li>
-
 		    <li>client_server_architecture</li>
-
-    		<li type="disc">API_testing_JSON_XML</li>
-
-			<li>Logs</li>
-
-			<li>Postman_Fidler</li>
-
-			<li>VPN</li>
-
-			<li>DevTools</li>
-
-			<li type="square">Mobile_Testing</li>
-
-			<li>Charles</li>
- 
-			<li>Terminal_Linux</li>
-    
-			<li>Charles</li>
- 
-			<li type="disc">SQL</li>
-
-			<li>GIT</li>
-  
-			<li>Jmeter</li>
- 
-			<li>Scrum</li>
-  
-			<li>Python</li>
-
+		    <li type="disc">API_testing_JSON_XML</li>
+	      	    <li>Logs</li>
+		    <li>Postman_Fidler</li>
+                    <li>VPN</li>
+                    <li>DevTools</li>
+                    <li type="square">Mobile_Testing</li>
+                    <li>Charles</li>
+                    <li>Terminal_Linux</li>
+                    <li>Charles</li>
+                    <li type="disc">SQL</li>
+                    <li>GIT</li>
+                    <li>Jmeter</li>
+                    <li>Scrum</li>
+                    <li>Python</li>
 	</ul>
 		
 	Ctrl+C для выхода из редактирования.
