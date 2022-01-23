@@ -1,0 +1,89 @@
+GIT Homework 2
+
+1. На локальном репозитории сделать ветки для:
+- Postman
+- Jmeter
+- CheckLists
+- Bag Reports
+- SQL
+- Charles
+- Mobile testing
+
+git branch Postman & git branch Jmeter & git branch Checklists & git branch Bug_reports & git branch SQL & git branch Charls & git branch Mobile_testing
+
+2. Запушить все ветки на внешний репозиторий
+
+git push -u origin --all
+
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+
+git checkout Bug_reports
+cat > bug_report_structure.txt
+ID
+Summary
+Incident description
+Pre-condition
+Steps (to repruduce)
+Actual result
+Expected result
+Environment
+Build
+Severity
+Priority
+Attachment
+
+Ctrl + C для выхода
+
+4. Запушить структуру багрепорта на внешний репозиторий
+
+git add . & git commit -m "add bug_report_structure file"
+git push #этого достаточно, так как уже пушили все ветки на внешний репозиторий, иначе нужно git push -u origin Bug_reports# 
+
+5. Вмержить ветку Bag Reports в Main
+
+git checkout main
+git merge Bug_reports
+
+6. Запушить main на внешний репозиторий.
+
+git push
+
+7. В ветке CheckLists набросать структуру чек листа.
+
+git checkout CheckLists
+cat > checklist_user_structure.txt
+Регистрация:
+        Email
+        Соцсети
+        Валидация полей
+Авторизация:
+        Пользователь активирован
+        Пользователь не активирован
+        Восстановление пароля
+        Валидация полей
+Профиль
+        Изменение имени
+        Изменение email
+        Изменение пароля
+        Валидация полей
+        Подписка
+        Удаление аккаунта
+
+Ctrl + C для выхода
+
+8. Запушить структуру на внешний репозиторий
+
+git add .
+git commit -m "add checklist_user_structure file"
+git push
+
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+
+На внешнем репозитории нажимаем последовательно на зеленые кнопочки "Compare & Pull request",
+затем "Create pull request", затем "Merge pull request", затем "Confirm merge"
+
+10. Синхронизировать Внешнюю и Локальную ветки Main
+
+git checkout main
+git pull
+ls -la #убедились, что файлик checklist_user_structure.txt появился в локальном репозитории#
