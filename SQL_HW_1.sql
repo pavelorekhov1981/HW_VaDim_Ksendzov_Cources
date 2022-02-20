@@ -2,7 +2,7 @@
 SELECT * FROM students;
 
 --2. ¬ывести всех студентов в таблице
-SELECT distinct name FROM students;
+SELECT name FROM students;
 
 --3. ¬ывести только Id пользователей
 SELECT Id FROM students;
@@ -41,10 +41,10 @@ SELECT name FROM students where created_on  = '2021-07-12 00:00:00';
 SELECT name FROM students where created_on  = '2021-07-12 00:00:00' and password = '1m313';
 
 --15. ¬ывести пользователей которые были созданы 2021-07-12 00:00:00 и у которых в имени есть слово Andrey
-SELECT name FROM students where created_on  = '2021-07-12 00:00:00' and NAME like '%Andrey%';
+SELECT name FROM students where created_on  = '2021-07-12 00:00:00' and name like '%Andrey%';
 
 --16. ¬ывести пользователей которые были созданы 2021-07-12 00:00:00 и у которых в имени есть цифра 8
-SELECT name FROM students where created_on  = '2021-07-12 00:00:00' and NAME like '%8%';
+SELECT name FROM students where created_on  = '2021-07-12 00:00:00' and name like '%8%';
 
 --17. ¬ывести пользовател€ у которых id равен 110
 SELECT name FROM students where Id  = 110;
